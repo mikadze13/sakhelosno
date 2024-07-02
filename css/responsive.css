@@ -1,0 +1,24 @@
+@media (max-width: 768px) {
+    .toggle-button {
+        display: flex;
+    }
+    
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+    
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    .navbar-links li {
+        text-align: center;
+        margin: 10px 0;
+    }
+    
+    .navbar-links.active {
+        display: flex;
+    }
+}

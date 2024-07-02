@@ -2,8 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
+} 
 body {
     font-family: Arial, sans-serif;
 }
@@ -12,9 +11,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #000000;
+    background-color: #111111;
     padding: 0 20px;
-    height: 60px;
+    height:78px;
 }
 
 .brand-title {
@@ -57,31 +56,14 @@ body {
     border-radius: 10px;
 }
 
-@media (max-width: 768px) {
-    .toggle-button {
-        display: flex;
-    }
-    
-    .navbar-links {
-        display: none;
-        width: 100%;
-    }
-    
-    .navbar-links ul {
-        width: 100%;
-        flex-direction: column;
-    }
-    
-    .navbar-links li {
-        text-align: center;
-        margin: 10px 0;
-    }
-    
-    .navbar-links.active {
-        display: flex;
-    }
+#owl-demo .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+} 
+.owl-carousel .owl-item img{
+    height: 405px;
 }
-
 .container-banner{
     background-image: url('https://bradfrost.com/wp-content/uploads/2017/05/workshop.jpg');
     background-repeat: no-repeat;

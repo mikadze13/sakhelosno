@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="./content/img/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Your page description here. This should be a brief summary of your content.">
     <meta name="keywords" content="keyword1, keyword2, keyword3">
@@ -21,6 +22,16 @@
     <meta name="twitter:description" content="Your page description here.">
     <meta name="twitter:image" content="https://www.example.com/image.jpg">
     <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+     <!-- Include Owl Carousel CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+     <!-- Include jQuery -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+     <!-- Include Owl Carousel JS -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 </head>
 
 <body>
@@ -29,7 +40,7 @@
     </nav>
 
     <nav class="navbar">
-        <div class="brand-title"><img src="./content/img/logo.jpg" alt=""></div>
+        <div class="brand-title"><a href=""></a><img src="./content/img/logo14.png" alt=""></div>
         <a href="javascript:void(0);" class="toggle-button" id="toggle-button">
             <span class="bar"></span>
             <span class="bar"></span>
@@ -44,10 +55,15 @@
             </ul>
         </div>
     </nav>
-    <div class="container">
-        <div class="container-banner">
-
-        </div>
+    <div id="owl-demo" class="owl-carousel owl-theme">
+ 
+        <div class="item1"><img src="https://bradfrost.com/wp-content/uploads/2017/05/workshop.jpg" alt="The Last of us"></div>
+        <div class="item1"><img src="https://bradfrost.com/wp-content/uploads/2017/05/workshop.jpg" alt="GTA V"></div>
+        <div class="item1"><img src="https://bradfrost.com/wp-content/uploads/2017/05/workshop.jpg" alt="Mirror Edge"></div>
+       
+     </div>
+      
+    <div class="container"> 
         <div class="container-service">
             <h1 style="text-align: center;">our service</h1>
             <div class="container-service_content" style="display: flex; flex-wrap: wrap;justify-content: center;">
@@ -80,6 +96,7 @@
             </div>
         </div>
     </div>
+    <script src="./content/js/main.js"></script>
 </body>
 
 </html>
