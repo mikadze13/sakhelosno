@@ -7,15 +7,22 @@ const translation = {
         home:"მთავარი"
     }
 }
-const languageSelect = document.querySelector("select");
+const languageSwitch = document.getElementById("languageSwitch");
 const Home = document.getElementById("Home")
-languageSelect.addEventListener("change",(event)=>{
-    setLanguage(event.target.value);
-})
+// languageSwitch.addEventListener("click",(event)=>{
+//     setLanguage(event.target.value);  
+// })
 const setLanguage = (language)=>{
-    if(language == "ge"){
+    if(language === "ge"){
         Home.innerText = translation.ge.home
-    }else if(language == "en"){
+    }else if(language === "en"){
         Home.innerText = translation.en.home
     }
 }
+languageSwitch.addEventListener("change", () => {
+    if (languageSwitch.checked) {
+        setLanguage("ge");
+    } else {
+        setLanguage("en");
+    }
+});
