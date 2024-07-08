@@ -25,20 +25,24 @@
     <link rel="stylesheet" href="./css/responsive.css">
     <script src="jquery-3.7.1.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-     <!-- Include Owl Carousel CSS -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-     <!-- Include jQuery -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-     <!-- Include Owl Carousel JS -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- Include Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <!-- Include jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Include Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 </head>
 
 <body>
-    <nav class="top-header">
+    <!-- <nav class="top-header">
         <span class="contact-number">Contact us: +1 (123) 456-7890</span>
-    </nav>
-
+    </nav> -->
+    <select class="lang_container">
+        <option value="en">english</option>
+        <option value="ge">georgian</option>
+    </select>
     <nav class="navbar">
         <div class="brand-title"><a href=""></a><img src="./content/img/logo14.png" alt=""></div>
         <a href="javascript:void(0);" class="toggle-button" id="toggle-button">
@@ -48,7 +52,7 @@
         </a>
         <div class="navbar-links" id="navbar-links">
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="#" id="Home">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">Contact</a></li>
@@ -56,14 +60,16 @@
         </div>
     </nav>
     <div id="owl-demo" class="owl-carousel owl-theme">
- 
-        <div class="item1"><img src="https://bradfrost.com/wp-content/uploads/2017/05/workshop.jpg" alt="The Last of us"></div>
+
+        <div class="item1"><img src="https://bradfrost.com/wp-content/uploads/2017/05/workshop.jpg"
+                alt="The Last of us"></div>
         <div class="item1"><img src="https://bradfrost.com/wp-content/uploads/2017/05/workshop.jpg" alt="GTA V"></div>
-        <div class="item1"><img src="https://bradfrost.com/wp-content/uploads/2017/05/workshop.jpg" alt="Mirror Edge"></div>
-       
-     </div>
-      
-    <div class="container"> 
+        <div class="item1"><img src="https://bradfrost.com/wp-content/uploads/2017/05/workshop.jpg" alt="Mirror Edge">
+        </div>
+
+    </div>
+
+    <div class="container">
         <div class="container-service">
             <h1 style="text-align: center;">our service</h1>
             <div class="container-service_content" style="display: flex; flex-wrap: wrap;justify-content: center;">
@@ -97,6 +103,7 @@
         </div>
     </div>
     <script src="./content/js/main.js"></script>
+    <script src="./content/js/translate.js"></script>
 </body>
 
 </html>
