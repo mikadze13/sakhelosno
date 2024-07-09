@@ -130,14 +130,14 @@ body {
     position: relative;
 } 
  .toggle::after{
-    background-image: url("/content/img/ge.svg");
+    background-image: url("/content/img/uk.svg");
  }
 
 .toggle::before {
     content: "";
     height: 29px;
     width: 29px;
-    background:url("/content/img/ge.svg");
+    background:url("/content/img/uk.svg");
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
@@ -153,7 +153,7 @@ body {
 #languageSwitch:checked+.toggle::before {
     position: absolute;
     left: calc(100% - 31px);
-    background:url("/content/img/uk.svg");
+    background:url("/content/img/ge.svg");
     background-repeat: no-repeat;
     background-size: cover;
 }
