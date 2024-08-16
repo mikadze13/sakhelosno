@@ -19,25 +19,31 @@
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16588553334"></script>
     <script> window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'AW-16588553334'); </script>
+     <!-- translate -->
+     <script src="/content/js/translate.js" defer></script>
 </head>
 
 <body>
     <div class="main_container">
         <div class="navbar">
             <div class="navbar_inner">
-                <div class="logo"><a href="/index.html"><img src="/content/img/BG.svg" alt="BG_logo" class="logo_img"></a></div>
-                <ul>
+                <div class="logo"><a href="/index.html"><img src="/content/img/BG.svg" alt="BG_logo"
+                            class="logo_img"></a></div>
+            <ul class="lang_container_moth">
+                <ul class="desktop_items">
                     <ul class="navbar_item__container">
-                        <li><a href="/index.html" class="page">მთავარი</a></li>
-                        <li><a href="#container-service" id="service">სერვისები</a></li>
-                        <li><a href="#about"  >ჩვენს შესახებ</a></li>
-                        <li><a href="#contact_container"  >FAQ</a></li>
-                        <li><a href=""  >კონტაქტი</a></li>
-                    </ul>
+                        <li><a href="#home" class="page" data-translate="Home"></a></li>
+                        <li><a href="#container-service" id="service" data-translate="service"></a></li>
+                        <li><a href="/./views/shared/aboutUs.html" data-translate="AboutUs"></a></li>
+                        <li><a href="#contact_container" id="FAQ" data-translate="FAQ"></a></li>
+                        <li><a href="./views/shared/contact.html" data-translate="Contact"></a></li>
+                    </ul> 
+                </ul>
+                 
                     <div class="lang_container">
                         <div class="daynight">
-                            <label for="languageSwitch">
-                                <input type="checkbox" id="languageSwitch">
+                            <label for="languageSwitcher">
+                                <input type="checkbox" id="languageSwitcher" onchange="changeLanguage(this)">
                                 <div class="toggle">
                                     <div class="star1"></div>
                                     <div class="star2"></div>
@@ -45,55 +51,98 @@
                             </label>
                         </div>
                     </div>
+                    <div class="main-of_lagswitch">
+                        <ul class="burgerMenu">
+                            <li>
+                                <img src="/content/icon/burgerMenu.svg" alt="burgerMenu">
+                            </li>
+                        </ul>
+                    </div>
                 </ul>
+                 
             </div>
+        </div>
+        <div class="mobile_navbar">
+            <nav>
+                <div class="mobile__nav_inner">
+                    <img src="/content/img/footer_logo.svg" alt="ლოგო">
+                    <img src="/content/icon/X.svg" class="close" alt="close">
+                </div>
+                <div class="navbar_content">
+                    <ul class="mobile_navbar_item__container">
+                        <li><a href="/index.html" class="page" data-translate="Home"></a></li>
+                        <li><a href="/index.html#container-service" class="mobile_service" id="mobile_Home"  data-translate="service"></a></li>
+                        <li><a href="/views/shared/aboutUs.html" data-translate="AboutUs"></a></li>
+                        <li><a href="/index.html#contact_container" data-translate="FAQ"></a></li>
+                        <li><a href="/views/shared/contact.html" data-translate="Contact"></a></li>
+                    </ul>
+                     
+                </div>
+                <div class="navbar_footer">
+                    <div class="mobile_footer-col">
+                        © 2024 sakhelosno
+                        <div class="mobile_social-links">
+                            <a href="https://www.facebook.com/xelosanixelos" target="_blank" ><img
+                                    src="/content/icon/facebook.svg" alt="facebook"></a>
+                            <a href="#" ><img src="/content/icon/instagram.svg" alt="instagram"></a>
+                            <a href="https://www.linkedin.com/in/sakhelosno-s-48a58a319/" target="_blank"
+                                 ><img src="/content/icon/linkedin.svg" alt="linkedin"></a>
+                            <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=sakhelosnoinfo@gmail.com"
+                                target="_blank"  ><img src="/content/icon/Gmail.svg" alt="Gmail"></a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
         </div>
         <div id="banner_container" class="banner_main">
             <div class="banner_container_img">
                 <img src="/content/img/clean.svg" alt="დასუფთავება">
             </div>
         </div>
-        <div id="phone">
-            <img src="/content/img/PhoneCall.svg" alt="დაგვიკავშირდით">
-
-            <a href="tel:555262662">555 26 26 62</a>
+        <div id="phone"> 
+            <img src="/content/img/PhoneCall.svg" class="tel_img" alt="დაგვიკავშირდით">
+            <a href="tel:555262662" class="tel_number">555 26 26 62</a>
+            <a href="tel:555262662" class="tel_number__number">
+                <img src="/content/img/PhoneCall.svg" alt="დაგვიკავშირდით">
+            </a>
         </div>
         <div class="service_detail">
             <div class="service_detail_inner">
-                <div class="service_detail_head">
-                    დასუფთავება
+                <div class="service_detail_head" data-translate="cleaning_main_title"> 
                 </div>
                 <div class="service_detail__desc">
-                    სახელოსნო გთავაზობთ ბინების, აგარაკების, ოფისებისა და კომერციული ფართების დასუფთავებას, როგორც
-                    რეგულარულ ასევე ერთჯერად მომსახურებას.
+                   <p data-translate="cleaning_offer_title"></p>  
 
                     <br>
                     <br>
 
-                    არსებობს დასუფთავების სხვადასხვა ტიპები, სირთულის მიხედვით:
-
+                  <p data-translate="cleaning_types_title"></p> 
                 </div>
                 <br>
-                <a href="#standart" class="clean_types">სტანდარტული</a>
-                <a href="#general" class="clean_types">გენერალური</a>
-                <a href="#after_repair" class="clean_types">რემონტის შემდგომი</a>
+                <a href="#standart" class="clean_types" data-translate="cleaning_standart_title1"></a>
+                <a href="#general" class="clean_types" data-translate="cleaning_general_title1"></a>
+                <a href="#after_repair" class="clean_types" data-translate="cleaning_afterrepair_title1"></a>
             </div>
 
         </div>
         <div class="service_detail__description" id="standart">
             <div class="service_detail_inner">
-                <div class="service_type">
-                    <h3 class="service_type__title">სტანდარტული დასუფთავება</h3>
-                    <br>
-                    <br>
-                    <p>
-                        • იატაკის მოგვა, მოწმენდა <br><br>
-                        • ავეჯზე მტვრის გადაწმენდა <br><br>
-                        • ნივთების თავის ადგილზე დალაგება <br><br>
-                        • პლინტუსების წმენდა <br><br>
-                        • 1.8 მეტრის სიმაღლეზე სრული დასუფთავება <br><br>
-                        • საძინებლის თეთრეულის გამოცვლა <br><br>
-                    </p>
+                <div class="service_type clean_service__type">
+                    <h3 class="service_type__title" data-translate="cleaning_standart_title2"></h3>
+                    <br>  
+                    <p data-translate="cleaning_standart_desc1"></p> 
+                    <br>   
+                    <p data-translate="cleaning_standart_desc2"></p>
+                    <br>  
+                    <p data-translate="cleaning_standart_desc3"></p>
+                    <br>  
+                    <p data-translate="cleaning_standart_desc4"></p>
+                    <br>  
+                    <p data-translate="cleaning_standart_desc5"></p>
+                    <br>  
+                    <p data-translate="cleaning_standart_desc6"></p> 
+                     
                     <br><br>
                 </div>
             </div>
@@ -101,70 +150,63 @@
         <div class="service_detail__description service_detail__description2" id="general">
             <div class="service_detail_inner">
                 <div class="service_type">
-                    <h3 class="service_type__title">გენერალური დასუფთავება</h3>
-                    <br>
-                    <br>
-                    • იგვება და იწმინდება იატაკი და ხალიჩა<br><br>
-                    • იწმინდება პლინტუსები<br><br>
-                    • იღება მტვერი ბრებიდან და ჭაღიდან <br><br>
-                    • კედლების ლოკალური გაწმენდა ჭუჭყისაგან - თუ ამის საშუალებას იძლევა კედლის საფარი<br><br>
-                    • ფანჯრების, ფანჯრის რაფების, მინების და ჩარჩოების გაწმენდა <br><br>
-                    • იღება მტვერი კარნიზებიდან <br><br>
-                    • იღება მტვერი კონდიციონერიდან <br><br>
-                    • იწმინდება კარებები <br><br>
-                    • იწმინდება სარკეები და მინის ზედაპირები <br><br>
-                    • იღება მტვერი აქსესუარებიდან, დიზაინის ელემენტებიდან <br><br>
-                    • ავეჯის გაწმენდა შიგნიდან და გარედან - თუ ისინი განთავისუფლებულია ნივთებისაგან <br><br>
-                    • ტყავის ავეჯის მოვლა სპეციალური ხსნარით <br><br>
-                    • რბილი ავეჯი იწმინდება მტვერსასრუტით <br><br>
-                    • იღება მტვერი საყოფაცხოვრებო ტექნიკიდან <br><br>
-                    • ონკანების, ნიჟარების და უნიტაზების გაწმენდა <br><br>
-                    • კაფელის გახეხვა ჭერინად იატაკამდე <br><br>
-                    • მეტლახის გახეხვა გასუფთავება <br><br>
-                    • საშხაპის და აბაზანის გარეცხვა <br><br>
-                    • ნაგვის ურნის გარეცხვა <br><br>
-                    • ნაგვის გატანა ნაგვის კონტეინერთან - არაუმეტეს 20 კგ <br><br>
-                    • პოლიეთილენის გამოცვლა ნაგვის ურნაში <br><br>
-                    • გარეცხვა ნაგვის ურნის შესანახი ადგილის <br><br>
-                    • სამზარეულოს კაფელის გახეხვა<br><br>
-                    • ცხიმების მოცილება <br><br>
-                    • სამზარეულო გარნიტურის გაწმენდა შიგნიდან და გარედან - თუ ისინი განთავისუფლებულია ნივთებისგან
+                    <h3 class="service_type__title" data-translate="cleaning_categorie_title2"></h3>
+                     
+                    <br> 
+                    <p data-translate="cleaning_general_desc1"></p><br> 
+                    <p data-translate="cleaning_general_desc2"></p><br> 
+                    <p data-translate="cleaning_general_desc3"></p><br> 
+                    <p data-translate="cleaning_general_desc4"></p><br> 
+                    <p data-translate="cleaning_general_desc5"></p><br> 
+                    <p data-translate="cleaning_general_desc6"></p><br> 
+                    <p data-translate="cleaning_general_desc7"></p><br> 
+                    <p data-translate="cleaning_general_desc8"></p><br> 
+                    <p data-translate="cleaning_general_desc9"></p><br> 
+                    <p data-translate="cleaning_general_desc10"></p><br> 
+                    <p data-translate="cleaning_general_desc11"></p><br> 
+                    <p data-translate="cleaning_general_desc12"></p><br> 
+                    <p data-translate="cleaning_general_desc13"></p><br> 
+                    <p data-translate="cleaning_general_desc14"></p><br> 
+                    <p data-translate="cleaning_general_desc15"></p><br> 
+                    <p data-translate="cleaning_general_desc16"></p><br> 
+                    <p data-translate="cleaning_general_desc17"></p><br> 
+                    <p data-translate="cleaning_general_desc18"></p><br> 
+                    <p data-translate="cleaning_general_desc19"></p><br> 
+                    <p data-translate="cleaning_general_desc20"></p><br> 
+                    <p data-translate="cleaning_general_desc21"></p><br> 
+                    <p data-translate="cleaning_general_desc22"></p><br> 
+                    <p data-translate="cleaning_general_desc23"></p><br> 
+                    <p data-translate="cleaning_general_desc24"></p><br> 
+                    <p data-translate="cleaning_general_desc25"></p>  
                     <br><br>
-                    • მაცივრის გახეხვა გარედან და შიგნიდან - თუ განთავისუფლებულია <br><br>
-                    • გაზქურის გახეხვა და ცხიმის მოშორება როგორც გარედან ასევე შიგნიდან <br><br>
-                    • ელექტრო ღუმელის გასუფთავება გარედან <br><br>
-                    • მიკროტალღური ფეჩის გასუფთავება გარედან და შიგნიდან <br><br>
-                    • ასევე კედლებიდან ჭუჭყუისა და ცხიმების მოცილება - თუ კედლის ზედაპირი იძლევა ამის საშუალებას<br><br>
-                    • მტვრის აღება სამზარეულოს ტექნიკიდან. ონკანისა და ნიჟარის გაწმენდა დეზინფექცია <br><br>
-                    • მომხმარებლის სურვილის შემთხვევაში, ჩამოთვლილი სერვისების გარდა, დამატებით,
-                    შესაძლებელია სხვა მომსახურების დამატებაც, მაგ: კარადების დალაგება, ჭურჭლის დარეცვა, აივნის
-                    დასუფთავება და სხვ. ფასი განისაზღვრება მოცემულობიდან გამომდინარე. <br><br>
-                    • გრძელვადიანი,სახელშეკრულებო მომსახურების შემთხვევაში მოქმედებს ფასდაკლება, კომპანია ადგენს
-                    გრაფიკს,განსაზღვრავს პერსონალის რაოდენობას და საფასურს. <br><br>
-
-                    <br><br>
+                    <p data-translate="cleaning_general_desc26"></p><br> 
+                    <p data-translate="cleaning_general_desc27"></p><br> 
+                    <p data-translate="cleaning_general_desc28"></p><br> 
+                    <p data-translate="cleaning_general_desc29"></p><br> 
+                    <p data-translate="cleaning_general_desc30"></p><br> 
+                    <p data-translate="cleaning_general_desc31"></p><br> 
+                    <p data-translate="cleaning_general_desc32"></p><br> 
+                    <p data-translate="cleaning_general_desc33"></p><br> 
+                     
                 </div>
             </div>
         </div>
         <div class="service_detail__description service_detail__description3" id="after_repair">
             <div class="service_detail_inner">
                 <div class="service_type">
-                    <h3 class="service_type__title">რემონტის შემდგომი</h3>
-                    <br>
-                    <br>
-                    <p>
-                        • სამშენებლო და რემონტის შემდგომი მტვრის აღება კედლებიდან და ჭერიდან <br><br>
-                        • ცემენტის, გაჯის და ა.შ. ლაქების მოცილება <br><br>
-                        • შემხმარი წებოს და სამშენებლო სკოჩის მოცილება ფანჯრებიდან, სარკეებიდან და ავეჯიდან<br><br>
-                        • საღებავის მიერ დალაქავებული ადგილების გაწმენდა (იატაკიდან, ფანჯრის რაფებიდან)<br><br>
-                        • ბინიდან წვრილი სამშენებლო ნარჩენების და ნაგვის გატანა - არაუმეტეს 10 კგ<br><br>
-                        • ნაგვის ჩაყრა ტომრებში (ნაგავი ჩვენ არ გაგვაქვს, მის გატანას დასჭირდება, ცალკე მანქანა, რასაც
-                        შესაბამისად ემატება ფასი )<br><br>
-                        • გრძელვადიანი,სახელშეკრულებო მომსახურების შემთხვევაში მოქმედებს ფასდაკლება, კომპანია
-                        ადგენს<br><br>
-                        გრაფიკს,განსაზღვრავს პერსონალის რაოდენობას და საფასურს. <br><br>
-                    </p>
+                    <h3 class="service_type__title" data-translate="cleaning_afterrepair_title2"></h3>
+                    <br> 
+                    <!-- add translate  -->
+                    <p data-translate="cleaning_afterrepair_desc1"></p><br>
+                    <p data-translate="cleaning_afterrepair_desc2"></p><br>
+                    <p data-translate="cleaning_afterrepair_desc3"></p><br>
+                    <p data-translate="cleaning_afterrepair_desc4"></p><br>
+                    <p data-translate="cleaning_afterrepair_desc5"></p><br>
+                    <p data-translate="cleaning_afterrepair_desc6"></p><br>
+                    <p data-translate="cleaning_afterrepair_desc7"></p><br><br>
+                    <p data-translate="cleaning_afterrepair_desc8"></p>
                     <br><br>
+                          
                 </div>
             </div>
         </div>
@@ -315,7 +357,7 @@
                     </p>
                 </div>
                 <div class="footer-col">
-                    <h4 data-aos="fade-up" class="footer_followUs">გამოგვყევით</h4>
+                    <h4 data-aos="fade-up" class="footer_followUs" data-translate="Footer_followUs"></h4>
                     <div class="social-links">
                         <a href="https://www.facebook.com/xelosanixelos" target="_blank" data-aos="fade-up"><img
                                 src="/content/icon/facebook.svg" alt="facebook"></a>
@@ -327,15 +369,15 @@
                     </div>
                 </div>
                 <div class="footer-col">
-                    <h4 data-aos="fade-up" class="footer_main">მთავარი</h4>
+                    <h4 data-aos="fade-up" class="footer_main" data-translate="Footer_Home"></h4>
                     <ul>
-                        <li><a href="#" data-aos="fade-up">სერვისები</a></li>
-                        <li><a href="#" data-aos="fade-up">ჩვენს შესახებ</a></li>
-                        <li><a href="#" data-aos="fade-up">FAQ</a></li>
+                        <li><a href="#" data-aos="fade-up" data-translate="service"></a></li>
+                        <li><a href="#" data-aos="fade-up" data-translate="AboutUs"></a></li>
+                        <li><a href="#" data-aos="fade-up" data-translate="FAQ"></a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4 data-aos="fade-up" class="footer_contact">კონტაქტი</h4>
+                    <h4 data-aos="fade-up" class="footer_contact" data-translate="Footer_contact">კონტაქტი</h4>
                     <ul>
                         <li data-aos="fade-up">+995 555 26 26 62</li>
                         <li data-aos="fade-up">+995 555 26 26 21</li>
@@ -347,6 +389,7 @@
         </footer>
     </div>
     <script src="/content/js/owl_carousel.js"></script>
+    <script src="/content/js/main.js"></script>
 </body>
 
 </html>

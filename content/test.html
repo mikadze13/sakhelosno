@@ -1,158 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smooth Scroll</title>
-    <!-- <meta name="description" lang="ka"
-    content="ხელოსნის გამოძახების სერვისი კომპანია sakhelosnoinfo.ge გთავაზობთ სერვისებს: კონდიციონერის მონტაჟი და შეკეთება, ელექტროობა, დაქსელვა, სანტექნიკა, კანალიზაციის წმენდა, დასუფთავება, დალაგება, რკინისა და მდფ კარის მონტაჟი, სავენტილაციო სისტემების მონტაჟი და დაგეგმარება, გათბობის ქვაბების მონტაჟი და შეკეთება, ცენტრალური გათბობის დაყენება, საოჯახო ტექნიკის მონტაჟი და შეკეთება, კარის საკეტების ამოჭრა და შეკეთება, ავეჯის დამზადება შეკვეთით, ინტერიერის დიზაინი, ავეჯის გადაზიდვა, ტრაქტორის გაქირავება, ავტობუსის გაქირავება, ევაკუატორის მომსახურება, უნივერსალური ხელოსნის მომსახურება. ყველა სერვისი შეგიძლიათ მიიღოთ ერთ სივრცეში" >
- <meta name="keyword" lang="ka"
- content="კონდიციონერი, კონდინციონერი, კონდენციონერი, კონდეციონერი, კონდიციონერის მონტაჟი, კონდიციონერის მონტაჟი, 
- კონდინციონერის მონტაჟი, კონდიციონერის დაყენება, კონდიციონერის დაყენება, კონდინციონერის დაყენება, კონდიციონერის შეკეთება, 
- კონდიციონერის შეკეთება, კონდინციონერის შეკეთება, კონდიციონერის გაკეთება, კონდიციონერის გაკეთება, კონდინციონერის გაკეთება,
- კონდიციონერის რეცხვა, კონდიციონერის რეცხვა, კონდინციონერის რეცხვა, კონდიციონერის წმენდა, კონდიციონერის წმენდა, კონდინციონერის წმენდა,
- ფრეონი, ფრეონის დამატება, ფრეონის ჩამატება, ფრეონის დატუმბვა, ფრეონის ჩატუმბვა, ფრეონის ჩასხმა">
-     
-    <meta name="keywords" lang="ka"
-        content="დალაგება, დასუფთავება, სახლის დალაგება, ოფისის დალაგება, დასუფთავების კომპანია, დალაგების სერვისი, დასუფთავების სერვისი, სტანდარტული დალაგება, გენერალური დალაგება, რემონტის შემდგომი დალაგება, მინისა და ვიტრაჟების წმენდა, სადარბაზოს დალაგება, სარდაფის დალაგება, ეზოს დალაგება" />
-    <meta property="og:image" content="https://www.mycleaner.ge/uploads/meta/large/1_1.jpg?v=14" />
-    <meta property="og:title" content="დასუფთავების სამსახური - დალაგება,  დასუფთავება" />
-    <meta property="og:description"
-        content="დალაგება-დასუფთავების კომპანია Mycleaner.ge გთავაზობთ სერვისებს: სტანდარტული დალაგება, გენერალური დალაგება, რემონტის შემდგომი დალაგება, მინისა და ვიტრაჟების წმენდა, სადარბაზოს დალაგება, სარდაფის დალაგება, ეზოს  დალაგება" />
-    <meta property="og:url" content="https://www.mycleaner.ge/ka/" />
-    <meta property="og:site_name" content="mycleaner.ge" /> 
-    <meta property="og:type" content="website" /> 
-    <meta property="fb:app_id" content="386808578399245"> 
-    <meta property="fb:admins" content="" /> 
-    <meta content="ka" https-equiv="Content-Language"> 
-    <meta name="author" content="mycleaner.ge" > 
-    <link href="https://www.mycleaner.ge/logo.ico?v=0.1" rel="shortcut icon" /> 
-    <meta name="copyright" content="©2017mycleaner.ge">
-    
-    <meta name="robots" content="all" />
-    <meta name="revisit-after" content="1 days">
-    <meta name="referrer" content="unsafe-url">
-    <link rel="canonical" href="https://www.mycleaner.ge/ka/"> -->
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        .container {
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border: 1px solid #000;
-            margin: 20px 0;
-        }
-
-        .nav {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            background-color: #333;
-            padding: 10px;
-        }
-
-        .nav a {
-            color: #fff;
-            margin: 0 10px;
-            text-decoration: none;
-        }
-
-        .nav a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <title>Language Switcher</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <div class="nav">
-        <a href="#section1">Go to Section 1</a>
-        <a href="#section2">Go to Section 2</a>
-        <a href="#section3">Go to Section 3</a>
+<div class="lang_container">
+    <div class="daynight">
+        <label for="languageSwitcher">
+            <input type="checkbox" id="languageSwitcher" onchange="changeLanguage(this)">
+            <div class="toggle">
+                <div class="flag uk-flag"></div>
+                <div class="flag ge-flag"></div>
+            </div>
+        </label>
     </div>
-
-    <div id="section1" class="container">
-        <h2>Section 1</h2>
-    </div>
-
-    <div id="section2" class="container">
-        <h2>Section 2</h2>
-    </div>
-
-    <div id="section3" class="container">
-        <h2>Section 3</h2>
-    </div>
-
+</div>
+ 
 </body>
+<style>
+    .lang_container {
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
 
+.toggle {
+    height: 21px;
+    width: 40px;
+    border-radius: 9999px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 6px 6px 10px #0000003d;
+    background-color: white;
+    display: inline-block;
+    position: relative;
+}
+
+.flag {
+    height: 19px;
+    width: 19px;
+    border-radius: 50%;
+    position: absolute;
+    top: 1px;
+    transition: all 0.5s ease-in-out;
+}
+
+.uk-flag {
+    background-image: url("/content/img/uk.svg");
+    left: 0;
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.ge-flag {
+    background-image: url("/content/img/ge.svg");
+    right: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#languageSwitcher {
+    display: none;
+}
+
+#languageSwitcher:checked + .toggle .uk-flag {
+    visibility: hidden;
+    opacity: 0;
+}
+
+#languageSwitcher:checked + .toggle .ge-flag {
+    visibility: visible;
+    opacity: 1;
+}
+
+#languageSwitcher:checked + .toggle::before {
+    transform: translateX(19px);
+}
+
+</style>
+
+<script>
+    let translations = {};
+
+function changeLanguage(checkbox) {
+    const lang = checkbox.checked ? 'ge' : 'en';
+    console.log('change');
+    console.log("Changing language to:", lang);
+    localStorage.setItem('preferredLanguage', lang);
+    loadLanguage(lang);
+}
+
+function loadLanguage(lang) {
+    const navLinks = document.querySelectorAll('.navbar_inner ul li a');
+    fetch(`/${lang}.json`)
+        .then(response => response.json())
+        .then(data => {
+            translations = data;
+            updateTexts();
+        })
+        .catch(error => console.error('Error loading language:', error));
+
+    navLinks.forEach(function (link) {
+        if (lang == 'en') {
+            link.style.padding = "6px 12px 6px 12px";
+        } else {
+            link.style.padding = "7px 12px 7px 12px";
+        }
+    });
+}
+
+function updateTexts() {
+    document.querySelectorAll('[data-translate]').forEach(elem => {
+        const key = elem.getAttribute('data-translate');
+        elem.textContent = translations[key];
+    });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const preferredLanguage = localStorage.getItem('preferredLanguage') || 'ge';
+    document.getElementById('languageSwitcher').checked = preferredLanguage === 'ge';
+    loadLanguage(preferredLanguage);
+});
+
+</script>
 </html>
-
-
-
-<!-- <div class="dropdown d-sm-block mobile-lang-dropdown">
-    <button class="btn btn-secondary dropdown-toggle main-info main-info-language" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-        @System.Threading.Thread.CurrentThread.CurrentCulture.TwoLetterISOLanguageName.ToUpper()
-    </button>
-    <ul class="dropdown-menu main-info-language-dropdown-menu">
-
-        @if (System.Threading.Thread.CurrentThread.CurrentCulture.TwoLetterISOLanguageName != "en")
-        {
-            <li class="lang__dropdown-list">
-                <a class="lang__dropdown-link" href=@Url.Action("SetCurrentLanguage", "Home", new { lang = "en", returnUrl = ViewBag.ReturnUrl })>
-                    EN
-                </a>
-            </li>
-        }
-        @if (System.Threading.Thread.CurrentThread.CurrentCulture.TwoLetterISOLanguageName != "tr")
-        {
-            <li class="lang__dropdown-list">
-                <a class="lang__dropdown-link" href=@Url.Action("SetCurrentLanguage", "Home", new { lang = "tr", returnUrl = ViewBag.ReturnUrl })>
-                    TR
-                </a>
-            </li>
-        }
-        @if (System.Threading.Thread.CurrentThread.CurrentCulture.TwoLetterISOLanguageName != "de")
-        {
-            <li class="lang__dropdown-list">
-                <a class="lang__dropdown-link" href=@Url.Action("SetCurrentLanguage", "Home", new { lang = "de", returnUrl = ViewBag.ReturnUrl })>
-                    DE
-                </a>
-            </li>
-        }
-        @if (System.Threading.Thread.CurrentThread.CurrentCulture.TwoLetterISOLanguageName != "pl")
-        {
-            <li class="lang__dropdown-list">
-                <a class="lang__dropdown-link" href=@Url.Action("SetCurrentLanguage", "Home", new { lang = "pl", returnUrl = ViewBag.ReturnUrl }) s>
-                    PL
-                </a>
-            </li>
-        }
-        @if (System.Threading.Thread.CurrentThread.CurrentCulture.TwoLetterISOLanguageName != "az")
-        {
-            <li class="lang__dropdown-list">
-                <a class="lang__dropdown-link" href=@Url.Action("SetCurrentLanguage", "Home", new { lang = "az", returnUrl = ViewBag.ReturnUrl }) s>
-                    AZ
-                </a>
-            </li>
-        }
-        @if (System.Threading.Thread.CurrentThread.CurrentCulture.TwoLetterISOLanguageName != "pt")
-        {
-            <li class="lang__dropdown-list">
-                <a class="lang__dropdown-link" href=@Url.Action("SetCurrentLanguage", "Home", new { lang = "pt", returnUrl = ViewBag.ReturnUrl }) s>
-                    PT
-                </a>
-            </li>
-        }
-    </ul>
-</div> -->

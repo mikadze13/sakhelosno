@@ -52,62 +52,69 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- Include Owl Carousel JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!--  -->
+    <script src="/content/js/translate.js" defer></script>
 </head>
 
 <body>
     <!-- <?php
     require ('header.php');
     ?> -->
-
+    <div class="loader_main" id="loader">
+        <div class="loader"></div>
+    </div>
+     
     <div class="main_container">
         <div class="navbar">
             <div class="navbar_inner">
                 <div class="logo"><a href="/index.html"><img src="/content/img/BG.svg" alt="BG_logo"
                             class="logo_img"></a></div>
+            <ul class="lang_container_moth">
                 <ul class="desktop_items">
                     <ul class="navbar_item__container">
-                        <li><a href="#home" class="page" id="Home" >მთავარი</a></li>
-                        <li><a href="#container-service" >სერვისები</a></li>
-                        <li><a href="/./views/shared/aboutUs.html">ჩვენს შესახებ</a></li>
-                        <li><a href="#contact_container" id="FAQ">FAQ</a></li>
-                        <li><a href="./views/shared/contact.html">კონტაქტი</a></li>
-                    </ul>
+                        <li><a href="#home" class="page" data-translate="Home"></a></li>
+                        <li><a href="#container-service" id="service" data-translate="service"></a></li>
+                        <li><a href="/./views/shared/aboutUs.html" data-translate="AboutUs"></a></li>
+                        <li><a href="#contact_container" id="FAQ" data-translate="FAQ"></a></li>
+                        <li><a href="./views/shared/contact.html" data-translate="Contact"></a></li>
+                    </ul> 
+                </ul>
+                 
                     <div class="lang_container">
                         <div class="daynight">
-                            <label for="languageSwitch" >
-                                <input type="checkbox" id="languageSwitcher" onchange="changeLanguage(this.value)" style="display:none">
+                            <label for="languageSwitcher">
+                                <input type="checkbox" id="languageSwitcher" onchange="changeLanguage(this)">
                                 <div class="toggle">
-                                    <div class="star1" value="en"></div>
-                                    <div class="star2" value="ge"></div>
+                                    <div class="star1"></div>
+                                    <div class="star2"></div>
                                 </div>
                             </label>
                         </div>
-                    </div> 
-                    <!-- <header>
-                        <select id="languageSwitcher" onchange="changeLanguage(this.value)">
-                            <option value="en">English</option>
-                            <option value="ge">Français</option>
-                        </select>
-                    </header> -->
+                    </div>
+                    <div class="main-of_lagswitch">
+                        <ul class="burgerMenu">
+                            <li>
+                                <img src="/content/icon/burgerMenu.svg" alt="burgerMenu">
+                            </li>
+                        </ul>
+                    </div>
                 </ul>
-                <ul class="burgerMenu" id="burgerMenu">
-                    <li><img src="/content/icon/burgerMenu.svg" alt="burgerMenu"></li>
-                </ul>
+                 
             </div>
         </div>
         <div class="mobile_navbar">
             <nav>
                 <div class="mobile__nav_inner">
                     <img src="/content/img/footer_logo.svg" alt="ლოგო">
-                    <img src="/content/icon/X.svg" id="close" alt="close">
+                    <img src="/content/icon/X.svg" class="close" alt="close">
                 </div>
                 <div class="navbar_content">
                     <ul class="mobile_navbar_item__container">
-                        <li><a href="#home" class="page" id="mobile_Home" >მთავარი</a></li>
-                        <li><a href="#container-service" class="mobile_service">სერვისები</a></li>
-                        <li><a href="./views/shared/aboutUs.html">ჩვენს შესახებ</a></li>
-                        <li><a href="#contact_container" id="FAQ">FAQ</a></li>
-                        <li><a href="./views/shared/contact.html">კონტაქტი</a></li>
+                        <li><a href="#home" class="page" id="mobile_Home" data-translate="Home"></a></li>
+                        <li><a href="#container-service" class="mobile_service" data-translate="service"></a></li>
+                        <li><a href="./views/shared/aboutUs.html" data-translate="AboutUs"></a></li>
+                        <li><a href="#contact_container" class="FAQ" data-translate="FAQ"></a></li>
+                        <li><a href="./views/shared/contact.html" data-translate="Contact"></a></li>
                     </ul>
                      
                 </div>
@@ -130,10 +137,10 @@
         </div>
         <div id="owl-demo" class="owl-carousel owl-theme">
 
-            <div class="item1"><img src="./content/img/test1.jpg" alt="slider"></div>
-            <div class="item1"><img src="./content/img/test2.jpg" alt="slider">
+            <div class="item1"><img src="./content/img/test1_5.jpg" alt="slider"></div>
+            <div class="item1"><img src="./content/img/test2_5.jpg" alt="slider">
             </div>
-            <div class="item1"><img src="./content/img/test3.jpg" alt="slider">
+            <div class="item1"><img src="./content/img/test3_5.jpg" alt="slider">
             </div>
 
         </div>
@@ -147,7 +154,7 @@
         </div>
         <div class="container">
             <div class="container-service" id="container-service">
-                <h1 class="cotnainer_service_title">ჩვენი სერვისები</h1>
+                <h1 class="cotnainer_service_title" data-translate="Home_item__title"></h1>
                 <div class="container-service_content">
                     <div class="item container_service_item" data-aos="fade-up">
                         <a href="./views/shared/conditioner.html">
@@ -155,7 +162,7 @@
                                 <div class="service_icon"><img src="./content/icon/snow_blowing.png" alt="snow_blowing">
                                 </div>
                                 <div class="service_title">
-                                    <p>კონდინცნიონერის მონტაჟი/შეკეთება</p>
+                                    <p data-translate="Home_item__cond"></p>
                                 </div>
                                 <div class="service_redirect"><img src="./content/icon/Arrowdown-right.png"
                                         alt="Arrowdown"> </div>
@@ -167,7 +174,7 @@
                             <div class="container-service_inner">
                                 <div class="service_icon"><img src="./content/icon/switch.png" alt="switch"></div>
                                 <div class="service_title">
-                                    <p>ელექტროობა/დაქსელვა</p>
+                                    <p data-translate="Home_item__elect"></p>
                                 </div>
                                 <div class="service_redirect"> <img src="./content/icon/Arrowdown-right.png"
                                         alt="Arrowdown"> </div>
@@ -181,7 +188,7 @@
                             <div class="container-service_inner">
                                 <div class="service_icon"><img src="./content/icon/faucet.png" alt="faucet"></div>
                                 <div class="service_title">
-                                    <p>სანტექნიკა/კანალიზაციის წმენდა</p>
+                                    <p data-translate="Home_item__plumber"></p>
                                 </div>
                                 <div class="service_redirect"> <img src="./content/icon/Arrowdown-right.png"
                                         alt="Arrowdown"> </div>
@@ -193,7 +200,7 @@
                             <div class="container-service_inner">
                                 <div class="service_icon"><img src="./content/icon/clean.png" alt="clean"></div>
                                 <div class="service_title">
-                                    <p>დასუფთავება</p>
+                                    <p data-translate="Home_item__cleaning"></p>
                                 </div>
                                 <div class="service_redirect"> <img src="./content/icon/Arrowdown-right.png"
                                         alt="Arrowdown"> </div>
@@ -205,7 +212,7 @@
                             <div class="container-service_inner">
                                 <div class="service_icon"><img src="./content/icon/door_closed.png" alt="door"></div>
                                 <div class="service_title">
-                                    <p>რკინის და მდფ კარის მონტაჟი</p>
+                                    <p data-translate="Home_item__metalMDFdoor"></p>
                                 </div>
                                 <div class="service_redirect"> <img src="./content/icon/Arrowdown-right.png"
                                         alt="Arrowdown"> </div>
@@ -217,7 +224,7 @@
                             <div class="container-service_inner">
                                 <div class="service_icon"><img src="./content/icon/radiation.png" alt="radiation"></div>
                                 <div class="service_title">
-                                    <p>სავენტილაციო სისტემების მონტ.შეკეთება</p>
+                                    <p data-translate="Home_item__ventilation"></p>
                                 </div>
                                 <div class="service_redirect"><img src="./content/icon/Arrowdown-right.png"
                                         alt="Arrowdown"></div>
@@ -230,7 +237,7 @@
                                 <div class="service_icon"><img src="./content/icon/meter_fire.png" alt="meter fire">
                                 </div>
                                 <div class="service_title">
-                                    <p>გათბობის ქვაბების მონტ.შეკეთება</p>
+                                    <p data-translate="Home_item__metalfir"></p>
                                 </div>
                                 <div class="service_redirect"><img src="./content/icon/Arrowdown-right.png"
                                         alt="Arrowdown"></div>
@@ -243,7 +250,7 @@
                                 <div class="service_icon"><img src="./content/icon/washing_machine.png"
                                         alt="washing machine"></div>
                                 <div class="service_title">
-                                    <p>საოჯახო ტექნიკის შეკეთება</p>
+                                    <p data-translate="Home_item__washingmachine"></p>
                                 </div>
                                 <div class="service_redirect"><img src="./content/icon/Arrowdown-right.png"
                                         alt="Arrowdown right"></div>
@@ -256,7 +263,7 @@
                                 <div class="service_icon"><img src="./content/icon/house_lock.png" alt="house lock">
                                 </div>
                                 <div class="service_title">
-                                    <p>კარის საკეტების შეკეთება</p>
+                                    <p data-translate="Home_item__houselock"></p>
                                 </div>
                                 <div class="service_redirect"><img src="./content/icon/Arrowdown-right.png"
                                         alt="Arrowdown"></div>
@@ -268,7 +275,7 @@
                             <div class="container-service_inner">
                                 <div class="service_icon"><img src="./content/icon/sofa.png" alt="sofa"></div>
                                 <div class="service_title">
-                                    <p>ავეჯის დამზადება</p>
+                                    <p data-translate="Home_item__sofa"></p>
                                 </div>
                                 <div class="service_redirect"> <img src="./content/icon/Arrowdown-right.png"
                                         alt="Arrowdown"> </div>
@@ -280,12 +287,12 @@
                             <div class="container-service_inner">
                                 <div class="service_icon"><img src="./content/icon/garage.png" alt="garage"></div>
                                 <div class="service_title">
-                                    <p>ინტერიერის დიზაინი</p>
+                                    <p data-translate="Home_item__interiorDesign"></p>
                                 </div>
                                 <div class="service_redirect"> <img src="./content/icon/Arrowdown-right.png"
                                         alt="Arrowdown"> </div>
                             </div>
-                        </a>
+                        </a>    
                     </div>
                     <div class="item" data-aos="fade-up">
                         <a href="./views/shared/delivery_furniture.html">
@@ -293,7 +300,7 @@
                                 <div class="service_icon"><img src="./content/icon/truck_container.png"
                                         alt="truck container"></div>
                                 <div class="service_title">
-                                    <p>ავეჯის გადაზიდვა</p>
+                                    <p data-translate="Home_item__truckcontaier"></p>
                                 </div>
                                 <div class="service_redirect"> <img src="./content/icon/Arrowdown-right.png"
                                         alt="Arrowdown"> </div>
@@ -307,7 +314,7 @@
                                     <div class="service_icon"><img src="./content/icon/truck_monster.png"
                                             alt="truck monster"></div>
                                     <div class="service_title">
-                                        <p>ტრაქტორის გაქირავება</p>
+                                        <p data-translate="Home_item__truckmonsterRental"></p>
                                     </div>
                                 </div>
                                 <div class="service_redirect"><img src="./content/icon/Arrowdown-right.png"
@@ -320,7 +327,7 @@
                             <div class="container-service_inner">
                                 <div class="service_icon"><img src="./content/icon/bus.png" alt="bus"></div>
                                 <div class="service_title">
-                                    <p>ავტობუსის გაქირავება</p>
+                                    <p data-translate="Home_item__busRental"></p>
                                 </div>
                                 <div class="service_redirect"><img src="./content/icon/Arrowdown-right.png"
                                         alt="Arrowdown"></div>
@@ -333,7 +340,7 @@
                                 <div class="service_icon"><img src="./content/icon/truck_container.png"
                                         alt="truck container"></div>
                                 <div class="service_title">
-                                    <p>ევაკუატორი</p>
+                                    <p data-translate="Home_item__evacuator"></p>
                                 </div>
                                 <div class="service_redirect"><img src="./content/icon/Arrowdown-right.png"
                                         alt="Arrowdown"></div>
@@ -345,7 +352,7 @@
                             <div class="container-service_inner">
                                 <div class="service_icon"><img src="./content/icon/tools.png" alt="tools"></div>
                                 <div class="service_title">
-                                    <p>უნივერსალური</p>
+                                    <p data-translate="Home_item__universal"></p>
                                 </div>
                                 <div class="service_redirect"> <img src="./content/icon/Arrowdown-right.png"
                                         alt="Arrowdown"> </div>
@@ -359,18 +366,18 @@
                 <div class="QA_container_content">
                     <!-- <div class="QA_contentleft__inner"> -->
                     <div class="faq-container" data-aos="fade-up">
-                        <h1>ხშირად დასმული კითხვები</h1>
+                        <h1 data-translate="FAQ_item"></h1>
                         <div class="faq-item" data-aos="fade-up">
                             <div class="faq-question">
-                                <p>როგორ გამოვიძახო ხელოსანი?</p> <img src="./content/icon/FAQarrow.png" alt="FAQarrow">
+                                <p data-translate="FAQ_quest1"></p> <img src="./content/icon/FAQarrow.png" alt="FAQarrow">
                             </div>
-                            <div class="faq-answer">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            <div class="faq-answer" >Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                 Perspiciatis, quas, maiores dolorem, iusto delectus consequuntur dolore animi porro
                                 doloremque vel corporis a provident. Alias, fugiat doloribus officiis eos in eum?</div>
                         </div>
                         <div class="faq-item" data-aos="fade-up">
                             <div class="faq-question">
-                                <p>რა დრო სჭირდება ხელოსნის მოსვლას?</p> <img src="./content/icon/FAQarrow.png"
+                                <p data-translate="FAQ_quest2"></p> <img src="./content/icon/FAQarrow.png"
                                     alt="FAQarrow">
                             </div>
                             <div class="faq-answer">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum quam
@@ -379,7 +386,7 @@
                         </div>
                         <div class="faq-item" data-aos="fade-up">
                             <div class="faq-question">
-                                <p>როგორ ხდება ანგარიშსწორება</p> <img src="./content/icon/FAQarrow.png" alt="FAQarrow">
+                                <p data-translate="FAQ_quest3"></p> <img src="./content/icon/FAQarrow.png" alt="FAQarrow">
                             </div>
                             <div class="faq-answer">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident
                                 consectetur ea beatae nemo? Dicta tempore incidunt similique debitis quibusdam quos,
@@ -387,7 +394,7 @@
                         </div>
                         <div class="faq-item" data-aos="fade-up">
                             <div class="faq-question">
-                                <p>როგორ ხდება მომსახურების საფასურის დადგენა?</p> <img
+                                <p data-translate="FAQ_quest4"></p> <img
                                     src="./content/icon/FAQarrow.png" alt="FAQarrow">
                             </div>
                             <div class="faq-answer">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident
@@ -408,22 +415,22 @@
                         <form id="contact-form" class="contact-form">
                             <div class="contact-form_container">
                                 <img src="./content/icon/contactFormicon.svg" alt="contactFormicon">
-                                <p>დაგვიტოვე უკუკავშირი</p>
+                                <p data-translate="Contact_form"></p>
                             </div>
                             <div class="form-group">
                                 <div class="field">
-                                    <label for="Email">ელ.ფოსტა</label>
+                                    <label for="Email" data-translate="Contact_form__email"></label>
                                     <input id="email_id" type="text" name="email_id" required>
                                     <i class='fas fa-envelope'></i>
                                 </div>
                                 <div class="message">
-                                    <label for="message">კომენტარი</label>
+                                    <label for="message" data-translate="Contact_form__mesagge"></label>
                                     <textarea id="message" name="message" rows="4" required></textarea>
                                 </div>
                             </div>
                             <div class="button-area">
-                                <button type="submit" id="submit_btn">
-                                    გაგზავნა <i class="fa fa-paper-plane"></i></button>
+                                <button type="submit" id="submit_btn" data-translate="Submit_button">
+                                     <i class="fa fa-paper-plane"></i></button>
                             </div>
                         </form>
                     </div>
@@ -435,7 +442,7 @@
             <div class="work_counter__container">
 
                 <div class="counter" id="counter">
-                    <p class="counter_title" data-aos="fade-up">შესრულებული <br> შეკვეთები</p>
+                    <p class="counter_title" data-aos="fade-up" data-translate="Fulfilled_orders"></p>
                     <div class="counter_number__container" data-aos="fade-up">
                         <p class="counter_number" data-target="1000">0</p>+
                     </div>
@@ -461,7 +468,7 @@
                         </ul> -->
                     </div>
                     <div class="footer-col">
-                        <h4 data-aos="fade-up" class="footer_followUs">გამოგვყევით</h4>
+                        <h4 data-aos="fade-up" class="footer_followUs" data-translate="Footer_followUs"></h4>
                         <div class="social-links">
                             <a href="https://www.facebook.com/xelosanixelos" target="_blank" data-aos="fade-up"><img
                                     src="./content/icon/facebook.svg" alt="facebook"></a>
@@ -473,15 +480,15 @@
                         </div>
                     </div>
                     <div class="footer-col">
-                        <h4 data-aos="fade-up" class="footer_main">მთავარი</h4>
+                        <h4 data-aos="fade-up" class="footer_main" data-translate="Footer_Home">მთავარი</h4>
                         <ul>
-                            <li><a href="#" data-aos="fade-up">სერვისები</a></li>
-                            <li><a href="#" data-aos="fade-up">ჩვენს შესახებ</a></li>
-                            <li><a href="#" data-aos="fade-up">FAQ</a></li>
+                            <li><a href="#" data-aos="fade-up" data-translate="service">სერვისები</a></li>
+                            <li><a href="#" data-aos="fade-up" data-translate="AboutUs">ჩვენს შესახებ</a></li>
+                            <li><a href="#" data-aos="fade-up" data-translate="FAQ">FAQ</a></li>
                         </ul>
                     </div>
                     <div class="footer-col">
-                        <h4 data-aos="fade-up" class="footer_contact">კონტაქტი</h4>
+                        <h4 data-aos="fade-up" class="footer_contact" data-translate="Contact">კონტაქტი</h4>
                         <ul>
                             <li data-aos="fade-up">+995 555 26 26 62</li>
                             <li data-aos="fade-up">+995 555 26 26 21</li>

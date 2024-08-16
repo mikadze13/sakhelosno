@@ -1,3 +1,13 @@
+
+// script.js
+
+window.addEventListener('load', function () {
+    var loader = document.getElementById('loader');
+    var content = document.getElementById('content');
+    loader.style.display = 'none';
+    content.style.display = 'block';
+});
+
 $(document).ready(function () {
 
     $("#owl-demo").owlCarousel({
@@ -24,7 +34,7 @@ $(document).ready(function () {
 
     });
 });
- 
+
 function counter() {
     $('.count').each(function () {
         if ($(this).hasClass('start')) {
@@ -51,18 +61,18 @@ function counter() {
             }
         }
     });
-} 
+}
 document.addEventListener('DOMContentLoaded', () => {
     const counter = document.querySelector('.counter_number');
     const target = +counter.getAttribute('data-target');
 
     const updateCounter = () => {
         const count = +counter.innerText;
-        const increment = target / 200; 
+        const increment = target / 200;
 
         if (count < target) {
             counter.innerText = Math.ceil(count + increment);
-            setTimeout(updateCounter, 10);  
+            setTimeout(updateCounter, 10);
         } else {
             counter.innerText = target;
         }
@@ -81,32 +91,35 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // FAQ function
 document.addEventListener('DOMContentLoaded', function () {
-    var faqItems = document.querySelectorAll('.faq-item'); 
+    var faqItems = document.querySelectorAll('.faq-item');
     faqItems.forEach(function (item) {
         var question = item.querySelector('.faq-question');
-        
 
-        question.addEventListener('click', function () { 
+
+        question.addEventListener('click', function () {
             item.classList.toggle('active');
- 
+
             var answer = item.querySelector('.faq-answer');
             if (item.classList.contains('active')) {
-                 answer.style.height = 'auto';  
+                answer.style.height = 'auto';
             } else {
-                answer.style.height = '0';  
+                answer.style.height = '0';
             }
         });
     });
-}); 
+});
 // Close navbar
-$( "#close" ).on( "click", function() {
-   $('.mobile_navbar').css('display','none')
+$(".close").on("click", function () {
+    $('.mobile_navbar').css('display', 'none')
 })
-$("#burgerMenu").on("click", function(){
-    $('.mobile_navbar').css('display','flex')
+$(".burgerMenu").on("click", function () { 
+    $('.mobile_navbar').css('display', 'flex')
 })
-$(".mobile_service").on("click",function(){
-    $('.mobile_navbar').css('display','none')
+$(".mobile_service").on("click", function () {
+    $('.mobile_navbar').css('display', 'none')
+})
+$(".FAQ").on("click",function(){
+    $('.mobile_navbar').css('display','none');
 })
 // function calculateTotal() {
 //     const msdMaterial = document.getElementById('msd-material').value * 25;

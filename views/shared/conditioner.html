@@ -17,30 +17,40 @@
     <!-- Include Owl Carousel JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <!-- Include Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16588553334"></script>
     <script> window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'AW-16588553334'); </script>
+    <!-- translate -->
+    <script src="/content/js/translate.js" defer></script>
 </head>
 
 <body>
+    <div class="loader_main" id="loader">
+        <div class="loader"></div>
+    </div>
     <div class="main_container">
         <div class="navbar">
             <div class="navbar_inner">
                 <div class="logo"><a href="/index.html"><img src="/content/img/BG.svg" alt="BG_logo"
                             class="logo_img"></a></div>
-                <ul>
+            <ul class="lang_container_moth">
+                <ul class="desktop_items">
                     <ul class="navbar_item__container">
-                        <li><a href="/index.html" class="page">მთავარი</a></li>
-                        <li><a href="#container-service" id="service">სერვისები</a></li>
-                        <li><a href="#about"  >ჩვენს შესახებ</a></li>
-                        <li><a href="#contact_container"  >FAQ</a></li>
-                        <li><a href="" >კონტაქტი</a></li>
-                    </ul>
+                        <li><a href="#home" class="page" data-translate="Home"></a></li>
+                        <li><a href="#container-service" id="service" data-translate="service"></a></li>
+                        <li><a href="/./views/shared/aboutUs.html" data-translate="AboutUs"></a></li>
+                        <li><a href="#contact_container" id="FAQ" data-translate="FAQ"></a></li>
+                        <li><a href="./views/shared/contact.html" data-translate="Contact"></a></li>
+                    </ul> 
+                </ul>
+                 
                     <div class="lang_container">
                         <div class="daynight">
-                            <label for="languageSwitch">
-                                <input type="checkbox" id="languageSwitch">
+                            <label for="languageSwitcher">
+                                <input type="checkbox" id="languageSwitcher" onchange="changeLanguage(this)">
                                 <div class="toggle">
                                     <div class="star1"></div>
                                     <div class="star2"></div>
@@ -48,8 +58,50 @@
                             </label>
                         </div>
                     </div>
+                    <div class="main-of_lagswitch">
+                        <ul class="burgerMenu">
+                            <li>
+                                <img src="/content/icon/burgerMenu.svg" alt="burgerMenu">
+                            </li>
+                        </ul>
+                    </div>
                 </ul>
+                 
             </div>
+        </div>
+        <div class="mobile_navbar">
+            <nav>
+                <div class="mobile__nav_inner">
+                    <img src="/content/img/footer_logo.svg" alt="ლოგო">
+                    <img src="/content/icon/X.svg" class="close" alt="close">
+                </div>
+                <div class="navbar_content">
+                    <ul class="mobile_navbar_item__container">
+                        <li><a href="/index.html" class="page" data-translate="Home"></a></li>
+                        <li><a href="/index.html#container-service" class="mobile_service" id="mobile_Home"
+                                data-translate="service"></a></li>
+                        <li><a href="/views/shared/aboutUs.html" data-translate="AboutUs"></a></li>
+                        <li><a href="/index.html#contact_container" data-translate="FAQ"></a></li>
+                        <li><a href="/views/shared/contact.html" data-translate="Contact"></a></li>
+                    </ul>
+
+                </div>
+                <div class="navbar_footer">
+                    <div class="mobile_footer-col">
+                        © 2024 sakhelosno
+                        <div class="mobile_social-links">
+                            <a href="https://www.facebook.com/xelosanixelos" target="_blank"><img
+                                    src="/content/icon/facebook.svg" alt="facebook"></a>
+                            <a href="#"><img src="/content/icon/instagram.svg" alt="instagram"></a>
+                            <a href="https://www.linkedin.com/in/sakhelosno-s-48a58a319/" target="_blank"><img
+                                    src="/content/icon/linkedin.svg" alt="linkedin"></a>
+                            <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=sakhelosnoinfo@gmail.com"
+                                target="_blank"><img src="/content/icon/Gmail.svg" alt="Gmail"></a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
         </div>
         <div id="banner_container" class="banner_main">
             <div class="banner_container_img">
@@ -57,32 +109,30 @@
             </div>
         </div>
         <div id="phone">
-            <img src="/content/img/PhoneCall.svg" alt="დაგვიკავშირდით">
-
-            <a href="tel:555262662">555 26 26 62</a>
+            <img src="/content/img/PhoneCall.svg" class="tel_img" alt="დაგვიკავშირდით">
+            <a href="tel:555262662" class="tel_number">555 26 26 62</a>
+            <a href="tel:555262662" class="tel_number__number">
+                <img src="/content/img/PhoneCall.svg" alt="დაგვიკავშირდით">
+            </a>
         </div>
         <div class="service_detail">
             <div class="service_detail_inner">
-                <div class="service_detail_head">
-                    კონდიცირება
+                <div class="service_detail_head" data-translate="conditioner_main_title">
+
                 </div>
-                <h3 class="service_title_">კონდიციონერის მონტაჟი</h3>
-                <h3 class="service_type__title">არსებობს კონდიციონერის მონტაჟის ორი ტიპი:</h3>
+                <h3 class="service_title_" data-translate="conditioner_minor_title"></h3>
+                <h3 class="service_type__title" data-translate="conditioner_montage_types"></h3>
                 <br>
                 <br>
                 <div class="service_type">
-                    <p>სტანდარტული მონტაჟი, რაც ითვალისწინებს 45 სმ სისქის აგურის ან ბლოკის კედლის გახვრეტას, გარე
-                        აგრეგატის სამაგრზე დამაგრებას, ქარხნულად დაკომპლექტებული მილების საშუალებით შიდა და გარე
-                        აგრეგატის ერთმანეთთან დაკავშირებას.
-
+                    <p data-translate="conditioner_desc1"> 
                         <br>
                         <br>
-
-                        მიუხედავად სისქისა ცივი ბეტონი, მონოლითური კედელი და ა.შ
-                        სხვა არასტანდარტული კედელი არ ითვალისწინებს სტანდარტულ მონტაჟს. თუ სამაგრის მიწოდების საჭიროება
-                        არ არსებობს, მყიდველს დაუკორექტირდება მონტაჟის ღირებულება 20 ლარის ოდენობით (გამოაკლდება
-                        გადასახდელ თანხას ან დაუბრუნდება);
                     </p>
+                    <p data-translate="conditioner_desc2"> 
+                    </p>
+
+
                 </div>
             </div>
 
@@ -90,66 +140,36 @@
         <div class="service_detail__description">
             <div class="service_detail_inner">
                 <div class="service_type">
-                    <p>
-                        • რეგიონებში, სტანდარტული/არასტანდარტული მონტაჟისას, მონტაჟის ღირებულებას დაემატება
-                        ტრანსპორტირების
-                        საფასური <span class="styled_text">1 კმ/ზე 1,30 ლარის</span> ოდენობით.
+                    <p data-translate="conditioner_desc3"> 
                     </p>
                     <br>
                     <br>
-                    <p>
-                        • არასტანდარტული მონტაჟი ითვალისწინებს ყველა სხვა შემთხვევას, რაც არ
-                        ჯდება სტანდარტულ მონტაჟის განმარტებაში, შესასრულებლად საჭიროებს დამატებით მასალებს, აქსესუარებს,
-                        ტექნიკის გამოყენებას, ტექნიკოსისთვის დამატებით (არასტანდარტულ) სამუშაო დროს, პირობებს, სამუშაოს
-                        სპეციფიკის სირთულეს. არასტანდარტული მონტაჟად ითვლება ჩამოთვლილიდან ერთი დამატებითი პირობის
-                        არსებობა
-                        და
-                        არ საჭიროებს ყველა პირობის ერთობლივად არსებობას. არასტანდარტული მონტაჟის ფასი გამოითვლება
-                        ტექნიკოსის
-                        მიერ ადგილის დათვალიერებისას.
+                    <p data-translate="conditioner_desc4"> 
                     </p>
                     <br>
                     <br>
-                    <p>
-                        • ფართის დათვალიერების ღირებულება შეადგენს <span class="styled_text">70 ლარს</span>.
+                    <p data-translate="conditioner_desc5">
+                        
                     </p>
                     <br>
                     <br>
-                    <p>
-                        • კონდიციონერის
-                        არასტანდარტული მონტაჟის საფასურის გამოთვლისას სტანდარტული მონტაჟის ღირებულებას დაემატება
-                        არასტანდარტული
-                        მომსახურების საფასური 60 ლარიდან ზემოთ (მემონტაჟის მიერ გაწეული სამუშაოს სირთულის და დახარჯული
-                        დროის
-                        გათვალისწინებით), დაემატება გამოყენებული სახარჯი მასალის ღირებულება.
+                    <p data-translate="conditioner_desc6"> 
                     </p>
                     <br>
                     <br>
-                    <p>• ამწე-კალათის გამოყენების
-                        საჭიროებისას, მყიდველი თავისი ხარჯით უზრუნველყოფს შესაბამისი ტექნიკის მობილიზებას, რასაც
-                        ათანხმებს
-                        შემსრულებელთან (კომპანიასთან). დამატებითი ინფორმაცია მყიდველისთვის:</p>
+                    <p data-translate="conditioner_desc7"> </p>
                     <br>
                     <br>
-                    <p>• გარე აგრეგატის სამაგრის ზომები
-                        განსხვავებულია კონდიციონერის სახეობის მიხედვით.</p>
+                    <p data-translate="conditioner_desc8"> </p>
                     <br>
                     <br>
-                    <p>• სპლიტ კონდიციონერებზე (არა ინვენტორულზე) დენის კაბელი
-                        ერთდება ჩვეულებრივ როზეტში.</p>
+                    <p data-translate="conditioner_desc9"> </p>
                     <br>
                     <br>
-                    <p>• კოლონური კონდიციონერებისთვის „სამიფაზა“ უნდა იყოს სამონტაჟო ადგილამდე
-                        მიყვანილი.</p>
-                    <br>
-                    <br>
-                    <p>• ინვერტორული კონდიციონერის დამონტაჟების შემთხვევაში დენის წყარო უნდა დაერთდეს გარე
-                        აგრეგატზე.
-                        აღნიშნულისთვის საჭიროა სადენი ზომა - 3*2,5 კვეთით სამონტაჟო ადგილამდე მიყვანილი.</p>
+                    <p data-translate="conditioner_desc10"> </p> 
                     <br><br><br>
-                    <p class="service_note">
-                        შენიშვნა: თუ სათანადო სიგრძის, კვეთის კაბელი არ არის დატანილი, მომხმარებელი ვალდებულია წინასწარ
-                        შეიძინოს და დაახვედროს მემონტაჟეს ან შეიძინოს სურვილისამებრ.
+                    <p class="service_note" data-translate="conditioner_types_warning_desc">
+                        
                     </p>
                     <br><br>
                 </div>
@@ -159,7 +179,7 @@
             <div class="service_detail_title">
                 <h1>იხილეთ სხვა სერვისები</h1>
             </div>
-             
+
             <div id="owl-demo" class="owl-carousel owl-theme">
                 <div class="item2">
                     <a href="">
@@ -289,6 +309,7 @@
                         <p>უნივერსალური</p>
                     </div>
                 </div>
+
             </div>
         </div>
         <footer class="footer">
@@ -302,7 +323,7 @@
                     </p>
                 </div>
                 <div class="footer-col">
-                    <h4 data-aos="fade-up" class="footer_followUs">გამოგვყევით</h4>
+                    <h4 data-aos="fade-up" class="footer_followUs" data-translate="Footer_followUs"></h4>
                     <div class="social-links">
                         <a href="https://www.facebook.com/xelosanixelos" target="_blank" data-aos="fade-up"><img
                                 src="/content/icon/facebook.svg" alt="facebook"></a>
@@ -314,15 +335,15 @@
                     </div>
                 </div>
                 <div class="footer-col">
-                    <h4 data-aos="fade-up" class="footer_main">მთავარი</h4>
+                    <h4 data-aos="fade-up" class="footer_main" data-translate="Footer_Home">მთავარი</h4>
                     <ul>
-                        <li><a href="#" data-aos="fade-up">სერვისები</a></li>
-                        <li><a href="#" data-aos="fade-up">ჩვენს შესახებ</a></li>
-                        <li><a href="#" data-aos="fade-up">FAQ</a></li>
+                        <li><a href="#" data-aos="fade-up" data-translate="service">სერვისები</a></li>
+                        <li><a href="#" data-aos="fade-up" data-translate="AboutUs">ჩვენს შესახებ</a></li>
+                        <li><a href="#" data-aos="fade-up" data-translate="FAQ">FAQ</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4 data-aos="fade-up" class="footer_contact">კონტაქტი</h4>
+                    <h4 data-aos="fade-up" class="footer_contact" data-translate="Footer_contact">კონტაქტი</h4>
                     <ul>
                         <li data-aos="fade-up">+995 555 26 26 62</li>
                         <li data-aos="fade-up">+995 555 26 26 21</li>
@@ -334,6 +355,7 @@
         </footer>
     </div>
     <script src="/content/js/owl_carousel.js"></script>
+    <script src="/content/js/main.js"></script>
 </body>
 
 </html>
