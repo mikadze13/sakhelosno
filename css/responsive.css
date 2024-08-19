@@ -202,7 +202,9 @@
         display: flex !important;
         align-items: center;
     }
-
+    .item1{
+        padding-bottom: 46px;
+    }
     #languageSwitcher {
         margin-bottom: 6px;
         margin-right: 10px;

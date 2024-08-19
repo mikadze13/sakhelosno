@@ -33,8 +33,7 @@
 
 .owl-carousel .owl-item img {
     height: 467px;
-    object-fit: cover;
-    object-position: left;
+    object-fit: fill; 
 } 
 @media screen and (max-width:550px){
     .owl-carousel .owl-item img {
