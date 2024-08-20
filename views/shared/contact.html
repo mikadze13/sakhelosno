@@ -28,10 +28,10 @@
                 <ul class="desktop_items">
                     <ul class="navbar_item__container">
                         <li><a href="/index.html" class="page" data-translate="Home"></a></li>
-                        <li><a href="#container-service" id="service" data-translate="service"></a></li>
+                        <li><a href="/index.html#container-service"  data-translate="service"></a></li>
                         <li><a href="/./views/shared/aboutUs.html" data-translate="AboutUs"></a></li>
-                        <li><a href="#contact_container" id="FAQ" data-translate="FAQ"></a></li>
-                        <li><a href="./views/shared/contact.html" data-translate="Contact"></a></li>
+                        <li><a href="/index.html#contact_container"   data-translate="FAQ"></a></li>
+                        <li><a href="/./views/shared/contact.html" id="contact" data-translate="Contact"></a></li>
                     </ul> 
                 </ul>
                  
@@ -65,11 +65,11 @@
                 </div>
                 <div class="navbar_content">
                     <ul class="mobile_navbar_item__container">
-                        <li><a href="/index.html" class="page"   >მთავარი</a></li>
-                        <li><a href="/index.html#container-service" class="mobile_service" id="mobile_Home" >სერვისები</a></li>
-                        <li><a href="/views/shared/aboutUs.html">ჩვენს შესახებ</a></li>
-                        <li><a href="/index.html#contact_container" >FAQ</a></li>
-                        <li><a href="/views/shared/contact.html" >კონტაქტი</a></li>
+                        <li><a href="/index.html" class="page"   data-translate="Home"></a></li>
+                        <li><a href="/index.html#container-service" class="mobile_service" id="mobile_Home" data-translate="service" >სერვისები</a></li>
+                        <li><a href="/views/shared/aboutUs.html" data-translate="AboutUs"></a></li>
+                        <li><a href="/index.html#contact_container" data-translate="FAQ"></a></li>
+                        <li><a href="/views/shared/contact.html" data-translate="Contact"></a></li>
                     </ul>
                      
                 </div>
@@ -144,7 +144,7 @@
                     </p>
                 </div>
                 <div class="footer-col">
-                    <h4 data-aos="fade-up" class="footer_followUs">გამოგვყევით</h4>
+                    <h4 data-aos="fade-up" class="footer_followUs" data-translate="Footer_followUs"></h4>
                     <div class="social-links">
                         <a href="https://www.facebook.com/xelosanixelos" target="_blank" data-aos="fade-up"><img
                                 src="/content/icon/facebook.svg" alt="facebook"></a>
@@ -156,25 +156,27 @@
                     </div>
                 </div>
                 <div class="footer-col">
-                    <h4 data-aos="fade-up" class="footer_main">მთავარი</h4>
+                    <h4 data-aos="fade-up" class="footer_main" data-translate="Footer_Home"></h4>
                     <ul>
-                        <li><a href="#" data-aos="fade-up">სერვისები</a></li>
-                        <li><a href="#" data-aos="fade-up">ჩვენს შესახებ</a></li>
-                        <li><a href="#" data-aos="fade-up">FAQ</a></li>
+                        <li><a href="#" data-aos="fade-up" data-translate="service"></a></li>
+                        <li><a href="#" data-aos="fade-up" data-translate="AboutUs"></a></li>
+                        <li><a href="#" data-aos="fade-up" data-translate="FAQ"></a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4 data-aos="fade-up" class="footer_contact">კონტაქტი</h4>
+                    <h4 data-aos="fade-up" class="footer_contact" data-translate="Contact"></h4>
                     <ul>
-                        <li data-aos="fade-up">+995 555 26 26 62</li>
-                        <li data-aos="fade-up">+995 555 26 26 21</li>
-                        <li data-aos="fade-up">sakhelosnoinfo@gmail.com</li>
+                        <li data-aos="fade-up"><a href="tel:+995 555 26 26 62">+995 555 26 26 62</a></li>
+                        <li data-aos="fade-up"><a href="tel:+995 555 26 26 21">+995 555 26 26 21</a></li>
+                        <li data-aos="fade-up"><a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=sakhelosnoinfo@gmail.com"
+                            target="_blank" >sakhelosnoinfo@gmail.com</a></li>
                     </ul>
                 </div>
 
             </div>
         </footer>
         <script src="/content/js/main.js"></script>
+        <script src="/content/js/translate.js"></script>
 </body>
 
 </html>

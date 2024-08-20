@@ -28,9 +28,10 @@ $(document).ready(function () {
         loop: true,
         nav: false,
         center: true,
-        autoplay: false,
+        autoplay: true,
+        smartSpeed: 1000,
         autoplayTimeout: 4000,
-        dots: true,
+        dots: false,
 
     });
 });

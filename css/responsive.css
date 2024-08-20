@@ -269,9 +269,11 @@
     }
 
     .owl-carousel .owl-item img {
-        object-fit: fill !important;
+        object-fit: scale-down !important;
     }
-
+    .contact_details{
+        width: auto;
+    }
     .counter_title {
         font-size: 40px;
     }
@@ -422,6 +424,16 @@
     .item2 {
         height: 180px;
     }
+    .contact_details{
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    .contact_details div{
+        padding: 10px 0px;
+    }
+    .address, .mail, .call, .call2{
+        border: none;
+    }
 }
 
 @media screen and (max-width:550px) {
@@ -509,7 +521,7 @@
     }
 
     .owl-carousel .owl-item img {
-        height: 157px;
+        height: 157px; 
     }
 
     .item2 {
