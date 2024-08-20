@@ -27,6 +27,10 @@
     "FAQ_quest2": "How long does it take for the craftman to arrive?",
     "FAQ_quest3": "How is settlement made?",
     "FAQ_quest4": "How is the service fee determined?",
+    "FAQ_answer1":"Requesting a Craftsman You can request a craftsman from us with just one phone call. Click the phone button, and our operator will be ready to assist you.",
+    "FAQ_answer2":"Service Area Our craftsmen are distributed according to the neighborhoods of Tbilisi. The professional closest to you will serve you and will be able to arrive at your address in the shortest possible time.",
+    "FAQ_answer3":"Payment Methods Payment can be made either in cash or via bank transfer. The customer can choose the option that is most convenient for them.",
+    "FAQ_answer4":"Pricing Certain services have fixed rates, while others are priced based on the complexity and scope of the work.",
     "Contact_form": "Leave us feedback",
     "Contact_form__email": "Email",
     "Contact_form__mesagge": "Comment",
@@ -188,5 +192,12 @@
     "Universalcraftsman_detail__title3": "• Siphon replacement",
     "Universalcraftsman_detail__title4": "• Faucet repair",
     "Universalcraftsman_detail__title5": "• Opening the door without damage",
-    "Universalcraftsman_detail__title6": "• Repair of door locks and many more"
+    "Universalcraftsman_detail__title6": "• Repair of door locks and many more",
+    "About_us_detail__desc1":"Sakhelosno2024 entered the Georgian market with a new and innovative approach. Our goal is to offer customers top-quality pre-repair and post-repair services, which include both interior and exterior renovation work.",
+    "About_us_detail__desc2":"Our company has gained extensive experience and has successfully resolved many clients' issues. We provide comprehensive services, including:Pre-repair consultations,Renovation work,Post-repair services",
+    "About_us_detail__desc3":"Our main advantage is that you can request our services with just one phone call. Our professional craftsmen will quickly and effectively address your problems, saving you time and avoiding unnecessary expenses.",
+    "About_us_detail__desc4":"Sakhelosno is already known for its comfort and professionalism. We facilitate a process that ensures fast and high-quality service.",
+    "Contact_desc":"For any additional questions about our services, please reach out to us at the number below.",
+    "Contact_address":"akaki tsereteli avenue 116",
+    "Footer_description":"Our goal is to ensure your comfort. Call a professional with just one phone call and receive the best service."
 }
