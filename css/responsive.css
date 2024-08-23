@@ -44,10 +44,7 @@
     .cotnainer_service_title {
         font-size: 28px;
     }
-
-    .footer-col:not(.footer_description) {
-        padding-left: 0px;
-    }
+ 
 
     .QA_container_content {
         justify-content: space-around;
@@ -194,6 +191,9 @@
 
     .faq-container {
         max-width: 578px;
+    }
+    .footer-col:not(.footer_description) {
+        padding-left: 0px; 
     }
 }
 
