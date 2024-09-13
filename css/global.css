@@ -16,8 +16,7 @@ html {
 
 body {
     font-family: myFont;
-}
-
+} 
 /* header */
 
 .navbar {
@@ -58,8 +57,8 @@ body {
 }
 
 .navbar li a {
-    font-size: 20px;
-    padding: 7px 12px;
+    font-size: 19px;
+    padding: 8px 12px;
     height: 3.8ch;
     position: relative;
     border: 2px solid transparent;
@@ -90,7 +89,9 @@ body {
     border: 2px solid rgba(166, 166, 166, 0.77);
     border-radius: 18px;
 }
-
+.mystyle{
+    color: red;
+}
 .navbar li a:hover {
     border: 2px solid rgba(166, 166, 166, 0.77);
     border-radius: 18px;
@@ -344,7 +345,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    top: 180px;
+    top: 290px;
     border: 5px solid #E9E9E9;
 
 }
@@ -352,16 +353,26 @@ body {
 #phone a {
     text-transform: none;
     text-decoration: none;
-    font-size: 32px;
-    padding: 0 !important;
-    margin: 0 !important;
+    letter-spacing: 2px;
+    font-size: 29px;
+    /* padding: 0 !important; */
+    margin-top: 8px !important;
     color: #FFFFFF;
+    margin-right: -9px;
 }
-
+#phone img{
+    width: 37px;
+    margin-left: -8px;
+    margin-top: 5px;
+}
 #phone:hover {
     right: -5px;
 }
-
+.phone__number_container{
+    display: flex;
+    flex-direction: column;
+    width: 67%;
+}
 .tel_number__number {
     display: none;
 }
@@ -776,7 +787,7 @@ body {
     height: 363px;
     position: relative;
     background-color: #EFD79B;
-    border-radius: 43px;
+    border-radius: 20px;
 }
 
 
@@ -792,10 +803,11 @@ body {
 }
 
 .faq-item {
-    border-radius: 100px;
+    border-radius: 8px;
     margin: 0px 0px 20px 0;
     overflow: hidden;
     box-shadow: 0px 0px 21px 7px rgba(0, 0, 0, 0.25);
+    
 }
 
 .faq-question {
@@ -833,11 +845,12 @@ body {
 .faq-item.active .faq-answer {
     padding: 15px;
     max-height: 500px;
-    opacity: 1;
+    opacity: 1; 
 }
 
 .faq-item.active {
     border-radius: 8px;
+     
 }
 
 .faq-question img {
@@ -848,10 +861,11 @@ body {
 .faq-item.active .faq-question {
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
+     
 }
 
 .faq-item.active .faq-question img {
-    transform: rotate(180deg);
+    transform: rotate(180deg); 
 }
 
 
@@ -859,7 +873,7 @@ body {
     padding: 26px 54px;
     width: 100%;
     height: 100%;
-    border-radius: 40px;
+    border-radius: 20px;
     box-shadow: 9px 12px 21px 1px rgba(0, 0, 0, 0.25);
 }
 
@@ -896,7 +910,9 @@ textarea {
     height: 74px;
     resize: none;
 }
-
+.phone__number_container{
+    width: 69% !important;
+}
 .form-group {
     margin-top: 16px
 }
@@ -938,7 +954,7 @@ textarea {
     align-items: center;
     height: 100%;
     background: #ffffffbf;
-    border-radius: 40px;
+    border-radius: 20px;
 }
 
 .checkmark {
@@ -979,7 +995,7 @@ textarea {
     position: relative;
     z-index: -2;
     margin-top: -62px;
-    height: 600px;
+    height: 538px;
 }
 
 
@@ -987,15 +1003,13 @@ textarea {
 .counter {
     background-color: #343D47;
     height: 100%;
-    padding-top: 160px;
+    padding-top: 173px;
     color: #ECECEC;
     font-size: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    border-bottom-right-radius: 21px;
-    border-bottom-left-radius: 21px;
+    text-align: center; 
     box-shadow: 0px 12px 49px 0px rgba(0, 0, 0, 0.25);
 }
 
@@ -1015,14 +1029,137 @@ textarea {
 }
 
 /* ************************** counter end ************************** */
+/* ************************** Our Partners BEGIN ********************** */
+.Our_partner_container{
+    width: 100%;
+     background-color: white;
+}
+.Our_partner_inner{
+    max-width: 1345px;
+    margin: 0 auto;
+    padding: 30px 0px;
+} 
+.Our_partner_inner h2{
+    font-size: 28px;
+    text-align: center;
+    padding-top: 0px;
+    margin-bottom: 15px;
+}
+.slick-slide {
+    margin: 0px 20px;
+}
+.slick-slide img { 
+    height: 150px;
+    width: 150px;
+}
+
+.slick-slider
+{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    user-select: none;
+    -webkit-touch-callout: none;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    
+ transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+ 
+/* ************************** Our Partners END ********************** */
 
 /* footer */
 .footer {
     background-color: #24282D;
-    padding: 101px 24px;
+    padding: 132px 24px;
     position: absolute;
-    width: 100%;
-    margin-top: -20px;
+    width: 100%; 
     z-index: -3;
 
 }
@@ -1070,7 +1207,7 @@ ul {
 }
 
 .footer_followUs::before {
-    width: 120px;
+    width: 117px;
 }
 
 .footer_main::before {
@@ -1276,3 +1413,5 @@ ul {
     padding-top: 80px;
     display: flex;
 }
+
+ 

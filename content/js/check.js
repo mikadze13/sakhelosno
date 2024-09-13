@@ -1,7 +1,5 @@
 document.getElementById('myForm').addEventListener('submit', function(event) {
-    event.preventDefault();
-    
-    // Assume the form is successfully connected
+    event.preventDefault(); 
     formSuccess();
 });
 
@@ -11,5 +9,5 @@ function formSuccess() {
     
     setTimeout(function() {
         checkmarkContainer.classList.add('hidden');
-    }, 2000); // Hide after 2 seconds
+    }, 2000); 
 }

@@ -113,30 +113,49 @@ document.addEventListener('DOMContentLoaded', function () {
 $(".close").on("click", function () {
     $('.mobile_navbar').css('display', 'none')
 })
-$(".burgerMenu").on("click", function () { 
+$(".burgerMenu").on("click", function () {
     $('.mobile_navbar').css('display', 'flex')
 })
 $(".mobile_service").on("click", function () {
     $('.mobile_navbar').css('display', 'none')
 })
-$(".FAQ").on("click",function(){
-    $('.mobile_navbar').css('display','none');
+$(".FAQ").on("click", function () {
+    $('.mobile_navbar').css('display', 'none');
 })
-// function calculateTotal() {
-//     const msdMaterial = document.getElementById('msd-material').value * 25;
-//     const otherColor = document.getElementById('other-color').value * 27;
-//     const lightCutout = document.getElementById('light-cutout').value * 15;
-//     const cloudGalaxy = document.getElementById('cloud-galaxy').value * 35;
-//     const chandelier = document.getElementById('chandelier').value * 30;
 
-//     const total = msdMaterial + otherColor + lightCutout + cloudGalaxy + chandelier;
-
-//     document.getElementById('total').textContent = total;
-
-//     // Show contact modal
-//     document.getElementById('contactModal').style.display = 'block';
-// }
-
-// function closeModal() {
-//     document.getElementById('contactModal').style.display = 'none';
-// }
+$(document).ready(function () {
+    $('.customer-logos').slick({
+        slidesToShow: 6, 
+        autoplay: true,
+        autoplaySpeed: 0,
+        speed: 3000,
+        infinite: true,
+        arrows: false,
+        dots: false,
+        pauseOnHover: true,
+        cssEase: 'linear',
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 4
+                }
+            }, {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 450,
+                settings: {
+                    slidesToShow: 2
+                }
+            }, {
+                breakpoint: 200,
+                settings: {
+                    slidesToShow: 1
+                }
+            }]
+    });
+}); 

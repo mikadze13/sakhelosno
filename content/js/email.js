@@ -15,13 +15,9 @@ $(document).ready(function () {
                     successfully.css('display', 'none')
                     contactForm.css('display', 'block');
                 }, 2000);
-
-
-                console.log('SUCCESS!', response.status, response.text, response.email_id);
-                document.getElementById('contact-form').reset();
-                console.log("Form Submitted Successfully");
-            }, function (error) {
-                console.log('FAILED...', error);
+ 
+                document.getElementById('contact-form').reset(); 
+            }, function (error) { 
                 alert("Form Submission Failed! Try Again");
             });
     });
