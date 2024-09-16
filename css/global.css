@@ -1157,10 +1157,11 @@ textarea {
 /* footer */
 .footer {
     background-color: #24282D;
-    padding: 132px 24px;
-    position: absolute;
+    /* padding: 132px 24px; */
+    padding: 105px 24px;
+    /* position: absolute; */
     width: 100%; 
-    z-index: -3;
+    /* z-index: -3; */
 
 }
 
@@ -1288,7 +1289,15 @@ ul {
     }
 }
 
-
+.copyright{
+    width: 100%;
+    padding: 10px; 
+    background-color: #24282D;
+}
+.copyright p{
+    text-align: center;
+    color: #DDDDDD;
+}
 /* clean page */
 .clean_types {
     width: max-content;

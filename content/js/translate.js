@@ -2,10 +2,9 @@ let translations = {};
 
 function changeLanguage(checkbox) {
     const lang = checkbox.checked ? 'en' : 'ge';
-    localStorage.setItem('preferredLanguage', lang);
+    localStorage.setItem('preferredLanguage', lang); 
     loadLanguage(lang);
-}
-
+} 
 function loadLanguage(lang) {
     const navLinks = document.querySelectorAll('.navbar_inner ul li a');
     fetch(`/common/${lang}.json`)

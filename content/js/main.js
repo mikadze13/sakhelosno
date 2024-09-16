@@ -159,3 +159,7 @@ $(document).ready(function () {
             }]
     });
 }); 
+
+const urlParams = new URLSearchParams(location.search);
+const route = urlParams.get('/views/shared/conditioner.html');
+console.log(route);
