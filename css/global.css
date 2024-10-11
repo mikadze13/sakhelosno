@@ -266,7 +266,7 @@ body {
 .container_service_item {
     display: flex;
     align-items: center;
-    background-color: #25719D !important;
+    background-color: #40947E !important;
 }
 
 .item__test {
@@ -297,40 +297,12 @@ body {
 
 .burgerMenu {
     display: none !important;
-}
-
-/* .owl-nav{
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
- }
- .owl-next, .owl-prev{
-    background: #24282D !important;
-    border-radius: 50% !important;
-    padding-top: 4px !important;
-    width: 59px;
-    height: 59px;
-    color: white !important;
-    font-size: 28px !important;
- } 
- .owl-prev, .owl-next { 
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    padding: 10px;
-    border-radius: 50%;
-  }
-  .owl-prev {
-    left: -25px;
-  }
-  .owl-next {
-    right: -25px;
-  } */
+} 
 /* *************************** owl-carousel end****************************/
 #phone {
     width: 285px;
     height: 100px;
-    background-color: #28A745;
+    background-color: #079242;
     border-top-left-radius: 100px;
     border-bottom-left-radius: 100px;
 
@@ -763,7 +735,7 @@ body {
 /* *************************** QA ****************************/
 .QA_container {
     width: 100%;
-    background-color: #6B6B6B;
+    background-color: #4B5764;
     margin-top: -62px;
     position: relative;
     z-index: -1;
@@ -786,7 +758,7 @@ body {
     width: 435px;
     height: 363px;
     position: relative;
-    background-color: #EFD79B;
+    background-color: #40947E;
     border-radius: 20px;
 }
 
@@ -811,7 +783,7 @@ body {
 }
 
 .faq-question {
-    background-color: #EFD79B;
+    background-color: #40947E;
     color: #6B6B6B;
     padding: 24px;
     cursor: pointer;
@@ -827,14 +799,15 @@ body {
 
 .faq-question p {
     font-size: 22px;
+    color: #FAF3E6;
 }
 
-.faq-question:hover {
+/* .faq-question:hover {
     background-color: #f1dba4;
-}
+} */
 
 .faq-answer {
-    background-color: rgba(244, 244, 244, 0.6);
+    background-color: #B0CCC4;
     padding: 0 15px;
     height: 0;
     opacity: 0;
@@ -887,12 +860,13 @@ body {
 
 .contact-form_container p {
     padding-left: 12px;
+    color: #FAF3E6;
 }
 
 label {
     display: block;
     margin-bottom: 5px;
-    color: #6B6B6B;
+    color: #FAF3E6;
 }
 
 .contact-form .form-group input,
@@ -932,7 +906,7 @@ textarea {
     width: 108px;
     height: 29px;
     border-radius: 19px;
-    background-color: #477BC9;
+    background-color: #25719D;
     color: #F7F7F7;
     border: none;
     font-size: 16px;
