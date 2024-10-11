@@ -1,9 +1,10 @@
 /* @media screen and (min-width:1024px) and (max-width:1440px) { */
-@media screen and (min-width:1440px){
-    .counter{
-        padding-top:209px
+@media screen and (min-width:1440px) {
+    .counter {
+        padding-top: 209px
     }
 }
+
 @media screen and (max-width:1440px) {
 
     .navbar li a {
@@ -457,7 +458,7 @@
     .call,
     .call2 {
         border: none;
-    } 
+    }
 }
 
 @media screen and (max-width:550px) {
@@ -495,11 +496,13 @@
     .contact-form_container {
         font-size: 28px;
     }
+
     .slick-slide img {
         height: 150px;
         width: 150px;
     }
 }
+
 
 @media screen and (max-width:450px) {
     .service_detail_head {
@@ -510,6 +513,23 @@
         border-bottom-left-radius: 15px;
         font-size: 18px;
         padding: 0px 15px 0px 15px;
+    }
+
+    .callus__number_ {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        flex-wrap: wrap;
+    }
+
+    .callus__number_ p {
+        margin: 0;
+    }
+
+    .callus__number_ a { 
+        margin: 0 !important;
+        color: #FAF3E6;
     }
 
     .banner_container_img img {

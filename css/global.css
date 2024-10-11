@@ -1151,7 +1151,22 @@ textarea {
 .slick-arrow.slick-hidden {
     display: none;
 }
- 
+.callus__number_ {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.callus__number_ p {
+    margin: 0;
+}
+
+.callus__number_ a {
+    margin-left: 10px;
+    color: #FAF3E6;
+}
 /* ************************** Our Partners END ********************** */
 
 /* footer */
@@ -1293,6 +1308,9 @@ ul {
     width: 100%;
     padding: 10px; 
     background-color: #24282D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .copyright p{
     text-align: center;
