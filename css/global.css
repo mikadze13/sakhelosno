@@ -246,7 +246,7 @@ body {
 
     width: 316px;
     height: 217px;
-    background-color: #DA7635;
+    background-color: #25719D;
     margin: 10px;
     color: #f8ad11;
     font-size: 34px;
@@ -266,7 +266,7 @@ body {
 .container_service_item {
     display: flex;
     align-items: center;
-    background-color: #6F7687 !important;
+    background-color: #25719D !important;
 }
 
 .item__test {
